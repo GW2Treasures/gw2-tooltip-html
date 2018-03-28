@@ -74,4 +74,9 @@ describe('format', () => {
         expect(format('before\nafter'))
             .to.equal('before<br/>after');
     });
+
+    it('should handle br tags', () => {
+        expect(format('before<br>after')).to.equal('before<br/>after');
+        expect(format('before<br/>after')).to.equal('before<br/>after');
+    });
 });
