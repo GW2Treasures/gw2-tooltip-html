@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/darthmaim/gw2-itemstats.git"
+    "url": "https://github.com/darthmaim/gw2-tooltip-html.git"
   },
   "keywords": [
     "gw2",
@@ -29,9 +29,9 @@
   "author": "darthmaim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/darthmaim/gw2-itemstats/issues"
+    "url": "https://github.com/darthmaim/gw2-tooltip-html/issues"
   },
-  "homepage": "https://github.com/darthmaim/gw2-itemstats#readme",
+  "homepage": "https://github.com/darthmaim/gw2-tooltip-html#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.0",
