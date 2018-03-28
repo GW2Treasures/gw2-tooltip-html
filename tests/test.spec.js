@@ -79,4 +79,15 @@ describe('format', () => {
         expect(format('before<br>after')).to.equal('before<br/>after');
         expect(format('before<br/>after')).to.equal('before<br/>after');
     });
+    
+    it('should handle missing close tags', () => {
+        expect(format('before<c=@test>content'))
+            .to.equal('before<span class="color-format--test">content</span>');
+
+        expect(format('before<c=#bada55>content'))
+            .to.equal('before<span class="color-format" style="color:#bada55">content</span>');
+
+        expect(format('before<c=@test1>content1</c>test<c=@test2>content2'))
+            .to.equal('before<span class="color-format--test1">content1</span>test<span class="color-format--test2">content2</span>');
+    });
 });
