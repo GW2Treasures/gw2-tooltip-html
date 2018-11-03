@@ -7,7 +7,7 @@
 
 [npm-badge]: https://img.shields.io/npm/v/gw2-tooltip-html.svg?style=flat-square
 [license-badge]: https://img.shields.io/github/license/darthmaim/gw2-tooltip-html.svg?style=flat-square
-[travis-badge]: https://img.shields.io/travis/darthmaim/gw2-tooltip-html.svg?style=flat-square
+[travis-badge]: https://img.shields.io/travis/darthmaim/gw2-tooltip-html/master.svg?style=flat-square
 [coverage-badge]: https://img.shields.io/codecov/c/github/darthmaim/gw2-tooltip-html.svg?style=flat-square
 [npm]: https://www.npmjs.com/package/gw2-tooltip-html
 [travis]: https://travis-ci.org/darthmaim/gw2-tooltip-html
