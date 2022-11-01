@@ -1,6 +1,6 @@
 {
   "name": "gw2-tooltip-html",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Parses markup text from Guild Wars 2 tooltips to html.",
   "main": "lib/index.js",
   "module": "es/index.js",
