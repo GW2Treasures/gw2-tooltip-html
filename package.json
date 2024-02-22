@@ -2,16 +2,17 @@
   "name": "gw2-tooltip-html",
   "version": "0.0.4",
   "description": "Parses markup text from Guild Wars 2 tooltips to html.",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "npm run test:coverage --silent",
     "test:coverage": "nyc --all --include=src --reporter=lcov --reporter=text-summary --report-dir=coverage npm run test:mocha",
     "test:mocha": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-core/register tests/**/*.spec.js",
     "clean": "rimraf lib es",
-    "build": "npm run build:commonjs && npm run build:es",
-    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
+    "build": "tsc",
     "prepublish": "npm run clean && npm run build"
   },
   "repository": {
@@ -32,7 +33,6 @@
     "url": "https://github.com/darthmaim/gw2-tooltip-html/issues"
   },
   "homepage": "https://github.com/darthmaim/gw2-tooltip-html#readme",
-  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-minify": "^0.1.4",
@@ -44,7 +44,8 @@
     "mkdirp": "^0.5.1",
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "typescript": "5.3.3"
   },
   "babel": {
     "plugins": [
