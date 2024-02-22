@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "GW2Treasures/gw2-tooltip-html" }],
+  "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "GW2Treasures/gw2-tooltip-html" }],
   "commit": false,
   "fixed": [],
   "linked": [],
