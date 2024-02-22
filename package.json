@@ -10,7 +10,8 @@
   "scripts": {
     "test": "jest",
     "clean": "rm -rf dist",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "npm run clean && npm run build && changeset publish"
   },
   "repository": {
     "type": "git",
