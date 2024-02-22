@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/darthmaim/gw2-tooltip-html#readme",
   "devDependencies": {
+    "@changesets/cli": "2.27.1",
     "@types/jest": "29.5.12",
     "jest": "29.7.0",
     "ts-jest": "29.1.2",
