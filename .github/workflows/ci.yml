@@ -83,7 +83,7 @@ jobs:
           NPM_CONFIG_PROVENANCE: true
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-          title: New Release
+          title: Next Release
           commit: Create new release
           publish: npm run release
           setupGitUser: false
