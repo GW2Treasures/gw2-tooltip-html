@@ -89,4 +89,10 @@ describe('format', () => {
         expect(format('before<c=@test1>content1</c>test<c=@test2>content2'))
             .toEqual('before<span class="color-format--test1">content1</span>test<span class="color-format--test2">content2</span>');
     });
+
+    it('should handle closing tags with format description', () => {
+        // api.guildwars2.com/v2/items/91667?v=latest&lang=en
+        expect(format("<c=@reminder>Contains ... Gang.</c=@reminder><br><br>Use ..."))
+            .toEqual('<span class="color-format--reminder">Contains ... Gang.</span><br/><br/>Use ...');
+    });
 });
