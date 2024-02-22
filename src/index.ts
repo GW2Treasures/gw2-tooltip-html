@@ -12,6 +12,7 @@ export function format(text: string | undefined | null) {
             `${OPEN_TAG}span class="color-format--$1"${CLOSE_TAG}$2${OPEN_TAG}/span${CLOSE_TAG}`)
         .replace(/<br\/?>/g, `${OPEN_TAG}br/${CLOSE_TAG}`)
         .replace(/\n/g, `${OPEN_TAG}br/${CLOSE_TAG}`)
+        .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
         .replace(OPEN_TAG_REGEXP, '<')

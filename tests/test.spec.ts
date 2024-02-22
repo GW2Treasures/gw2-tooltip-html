@@ -16,6 +16,7 @@ describe('format', () => {
 
     it('should escape special chars', () => {
         expect(format('this <c> has specialchars')).toEqual('this &lt;c&gt; has specialchars');
+        expect(format('this & has specialchars')).toEqual('this &amp; has specialchars');
     });
 
     it('should replace markup', () => {
