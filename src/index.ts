@@ -18,3 +18,10 @@ export function format(text: string | undefined | null) {
     .replace(OPEN_TAG_REGEXP, '<')
     .replace(CLOSE_TAG_REGEXP, '>');
 }
+
+export function strip(text: string | undefined | null) {
+  return 'string' !== typeof text ? '' : text
+    .replace(/<c=#([^>]+)>([^]*?)(<\/?c>|$)/g, `$2`)
+    .replace(/<c[=@][@=]?([^>]+)>([^]*?)(<\/?c\/?(=@?[^>]+)?>|$)/g, `$2`)
+    .replace(/<br\/?>/g, `\n`)
+}
