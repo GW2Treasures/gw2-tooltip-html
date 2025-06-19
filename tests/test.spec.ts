@@ -1,3 +1,4 @@
+import { describe, expect, it } from '@jest/globals';
 import { format, strip } from '../src/index';
 
 describe('format', () => {
