@@ -1,5 +1,10 @@
-/** @type {import('ts-jest').JestConfigWithTsJest} */
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
+import { createDefaultPreset, type JestConfigWithTsJest } from 'ts-jest'
+
+const config: JestConfigWithTsJest = {
+  ...createDefaultPreset(),
+
+  // don't inject globals (import from @jest/globals instead)
+  injectGlobals: false,
 };
+
+export default config;
