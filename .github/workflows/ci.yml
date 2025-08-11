@@ -21,7 +21,7 @@ jobs:
         node-version: [ 18, 20, 21 ]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
@@ -57,7 +57,7 @@ jobs:
           private-key: ${{ secrets.GW2T_RELEASE_APP_PRIVATE_KEY }}
 
       - name: Checkout Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ steps.generate-token.outputs.token }}
 
