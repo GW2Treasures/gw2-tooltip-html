@@ -1,5 +1,11 @@
 # gw2-tooltip-html
 
+## 0.1.1
+
+### Patch Changes
+
+- Maintenance Release ([#96](https://github.com/GW2Treasures/gw2-tooltip-html/pull/96))
+
 ## 0.1.0
 
 ### Minor Changes
