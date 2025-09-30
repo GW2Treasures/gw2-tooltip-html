@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 18, 20, 21 ]
+        node-version: [ 20, 22, 24 ]
 
     steps:
     - uses: actions/checkout@v5
@@ -61,10 +61,10 @@ jobs:
         with:
           token: ${{ steps.generate-token.outputs.token }}
 
-      - name: Setup Node.js 21
+      - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 21
+          node-version: 24
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
 
@@ -80,8 +80,6 @@ jobs:
         uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
-          NPM_CONFIG_PROVENANCE: true
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
           title: Next Release
           commit: Create new release
