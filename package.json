@@ -11,7 +11,7 @@
     "test": "jest",
     "clean": "rm -rf dist",
     "build": "tsc",
-    "release": "npm run clean && npm run build && changeset publish"
+    "release": "pnpm run clean && pnpm run build && changeset publish"
   },
   "repository": {
     "type": "git",
@@ -40,8 +40,19 @@
     "ts-node": "10.9.2",
     "typescript": "5.9.2"
   },
+  "engines": {
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm",
+    "pnpm": "10.17.1"
+  },
   "publishConfig": {
     "access": "public",
     "provenance": true
-  }
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "unrs-resolver"
+    ]
+  },
+  "packageManager": "pnpm@10.17.1"
 }
