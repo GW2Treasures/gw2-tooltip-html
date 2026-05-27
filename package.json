@@ -43,7 +43,7 @@
   "engines": {
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm",
-    "pnpm": "10.33.4"
+    "pnpm": "10.34.0"
   },
   "publishConfig": {
     "access": "public",
@@ -54,5 +54,5 @@
       "unrs-resolver"
     ]
   },
-  "packageManager": "pnpm@10.33.4"
+  "packageManager": "pnpm@10.34.0"
 }
